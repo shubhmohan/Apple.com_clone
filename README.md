@@ -1,6 +1,5 @@
 # Apple India Homepage Clone
 
-![Banner Placeholder](https://via.placeholder.com/1000x300/000000/FFFFFF?text=Apple+Website+Clone+-+Shubh+Mohan)
 
 <p align="center">
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">

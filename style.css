@@ -24,7 +24,6 @@
             opacity: 0.8;
             transition: opacity 0.3s ease;
             /* If your apple-logo.png is black, uncomment the line below to make it white! */
-            /* filter: invert(1); */ 
         }
         
         .nav-logo:hover {

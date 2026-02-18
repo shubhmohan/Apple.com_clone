@@ -208,7 +208,6 @@
         }
         .footer-credit span { color: #1d1d1f; font-weight: 600; }
 
-        /* --- 7. MOBILE RESPONSIVENESS --- */
         @media (max-width: 768px) {
             .hero-text h1 { font-size: 32px; }
             .hero-text h3 { font-size: 19px; }

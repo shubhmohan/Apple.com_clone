@@ -176,7 +176,7 @@
             z-index: 10; 
         }
 
-        .grid-item img:not(.watch-logo) { /* Protects the logo from getting resized like a product */
+        .grid-item img:not(.watch-logo) { 
             margin-top: auto; 
             width: 80%;       
             max-height: 350px;

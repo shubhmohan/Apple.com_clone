@@ -52,14 +52,6 @@ Since this project is built using pure frontend technologies, no build tools, se
 
 ---
 
-## 📸 Screenshots
-
-*(Add screenshots of your website here once you upload it to GitHub!)*
-* Desktop View: `![Desktop View](link_to_desktop_image.jpg)`
-* Mobile View: `![Mobile View](link_to_mobile_image.jpg)`
-
----
-
 ## 👨‍💻 Author
 
 **Shubh Mohan**

@@ -134,7 +134,6 @@
             background-repeat: no-repeat;
         }
 
-        /* --- 5. THE GRID --- */
         .grid-container {
             display: grid;
             grid-template-columns: 1fr 1fr;

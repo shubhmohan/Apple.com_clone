@@ -159,7 +159,7 @@
             font-size: 40px;
             font-weight: 600;
             margin-bottom: 4px;
-            display: flex; /* Helps align the logo and text perfectly */
+            display: flex; 
             align-items: center;
             justify-content: center;
         }

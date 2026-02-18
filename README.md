@@ -1,4 +1,4 @@
-#  Apple India Homepage Clone
+# Apple India Homepage Clone
 
 ![Banner Placeholder](https://via.placeholder.com/1000x300/000000/FFFFFF?text=Apple+Website+Clone+-+Shubh+Mohan)
 
@@ -34,6 +34,12 @@ This clone meticulously recreates the Apple premium web experience, focusing on 
 * **Typography:** Implementation of Apple-style system fonts (`SF Pro Text`, `-apple-system`).
 
 ---
+
+## ⚡ Deployed Link
+https://shubhmohan.github.io/Apple.com_clone/
+
+---
+
 
 ## 🚀 How to Run the Project
 

@@ -176,7 +176,6 @@
             z-index: 10; 
         }
 
-        /* Smart Image Handling for Grid */
         .grid-item img:not(.watch-logo) { /* Protects the logo from getting resized like a product */
             margin-top: auto; 
             width: 80%;       

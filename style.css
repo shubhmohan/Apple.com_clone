@@ -62,7 +62,7 @@
         .nav-content li a { opacity: 0.8; transition: opacity 0.3s; }
         .nav-content li a:hover { opacity: 1; }
 
-        /* --- 3. HERO SECTIONS --- */
+
         .hero-section {
             position: relative;
             height: 680px; 

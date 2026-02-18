@@ -1,0 +1,232 @@
+ /* --- 1. GLOBAL RESET & TYPOGRAPHY --- */
+        :root {
+            --dark-bg: #1d1d1f;
+            --light-bg: #f5f5f7;
+            --apple-blue: #0066cc; 
+            --nav-height: 44px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        html { scroll-behavior: smooth; }
+        body { background-color: #fff; overflow-x: hidden; }
+        a { text-decoration: none; color: inherit; }
+
+        /* --- LOGO SIZING --- */
+        .nav-logo {
+            width: 14px; 
+            height: auto;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+            /* If your apple-logo.png is black, uncomment the line below to make it white! */
+            /* filter: invert(1); */ 
+        }
+        
+        .nav-logo:hover {
+            opacity: 1;
+        }
+
+        .watch-logo {
+            width: 35px; 
+            height: auto;
+            vertical-align: baseline; 
+            margin-right: 4px;
+            /* If your apple-logo.png is black, uncomment the line below to make it white! */
+            /* filter: invert(1); */
+        }
+
+        /* --- 2. NAVIGATION BAR --- */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: var(--nav-height);
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(20px);
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav-content {
+            display: flex;
+            gap: 35px; 
+            font-size: 12px;
+            color: #e8e8ed;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-content li a { opacity: 0.8; transition: opacity 0.3s; }
+        .nav-content li a:hover { opacity: 1; }
+
+        /* --- 3. HERO SECTIONS --- */
+        .hero-section {
+            position: relative;
+            height: 680px; 
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 55px;
+            text-align: center;
+            margin-bottom: 12px;
+            cursor: pointer;
+        }
+
+        .hero-text h1 {
+            font-size: 56px;
+            font-weight: 600;
+            margin-bottom: 6px;
+            letter-spacing: -0.5px;
+        }
+
+        .hero-text h3 {
+            font-size: 28px;
+            font-weight: 400;
+            margin-bottom: 15px;
+        }
+
+        /* --- 4. LINKS & BUTTONS --- */
+        .cta-links {
+            display: flex;
+            gap: 25px;
+            font-size: 19px; 
+            color: var(--apple-blue);
+            margin-top: 5px;
+        }
+
+        .cta-links a {
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .cta-links a::after {
+            content: ' ›';
+            font-size: 22px;
+            margin-left: 5px;
+            transition: transform 0.2s;
+        }
+
+        .cta-links a:hover { text-decoration: underline; }
+        .cta-links a:hover::after {
+            transform: translateX(3px); 
+            text-decoration: none;
+        }
+
+        /* Hero Backgrounds (Fixed sizing to prevent text overlap) */
+        #iphone-pro {
+            background-color: #000;
+            color: #f5f5f7;
+            background-image: url("img/17pro.jpg");
+            background-position: bottom center; 
+            background-size: auto 75%; 
+            background-repeat: no-repeat;
+        }
+
+        #iphone-base {
+            background-color: #fff;
+            color: #1d1d1f;
+            background-image: url("img/iPhone-17-Colors-Photoroom.png");
+            background-position: bottom center;
+            background-size: auto 75%;
+            background-repeat: no-repeat;
+        }
+
+        /* --- 5. THE GRID --- */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            padding: 12px;
+            max-width: 2000px;
+            margin: 0 auto;
+        }
+
+        .grid-item {
+            height: 580px;
+            background-color: var(--light-bg);
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            padding-top: 50px;
+            text-align: center;
+            overflow: hidden; 
+            position: relative;
+        }
+
+        .grid-item h2 {
+            font-size: 40px;
+            font-weight: 600;
+            margin-bottom: 4px;
+            display: flex; /* Helps align the logo and text perfectly */
+            align-items: center;
+            justify-content: center;
+        }
+
+        .grid-item h4 {
+            font-size: 21px;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+
+        .grid-item .cta-links {
+            font-size: 17px; 
+            gap: 20px;
+            z-index: 10; 
+        }
+
+        /* Smart Image Handling for Grid */
+        .grid-item img:not(.watch-logo) { /* Protects the logo from getting resized like a product */
+            margin-top: auto; 
+            width: 80%;       
+            max-height: 350px;
+            object-fit: contain;
+            transition: transform 0.5s ease;
+            pointer-events: none; 
+        }
+
+        .grid-item:hover img:not(.watch-logo) {
+            transform: scale(1.03); 
+        }
+
+        .grid-dark {
+            background-color: #000;
+            color: white;
+        }
+
+        /* --- 6. FOOTER --- */
+        footer {
+            background-color: var(--light-bg);
+            padding: 40px 20px;
+            font-size: 12px;
+            color: #86868b;
+        }
+        .footer-credit {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #d2d2d7;
+            text-align: center;
+        }
+        .footer-credit span { color: #1d1d1f; font-weight: 600; }
+
+        /* --- 7. MOBILE RESPONSIVENESS --- */
+        @media (max-width: 768px) {
+            .hero-text h1 { font-size: 32px; }
+            .hero-text h3 { font-size: 19px; }
+            .hero-section { height: 500px; }
+            
+            .grid-container { grid-template-columns: 1fr; } 
+            
+            .grid-item { height: 500px; }
+            .grid-item h2 { font-size: 32px; }
+            .grid-item h4 { font-size: 18px; }
+            
+            .nav-content li:nth-child(n+4) { display: none; } 
+        }

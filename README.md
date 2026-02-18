@@ -65,4 +65,4 @@ Since this project is built using pure frontend technologies, no build tools, se
 **Shubh Mohan**
 *Semester-End Web Development Project*
 
-Made with ❤️ and CSS Grid.
+Made with ❤️ by Shubh Mohan
